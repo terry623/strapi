@@ -1,0 +1,10 @@
+{
+  "name": "strapi",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -n \"PAGE_BUILDER,STRAPI_CMS\" -c \"auto\" \"cd page-builder && pnpm run dev\" \"cd cms && pnpm run develop\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
