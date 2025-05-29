@@ -1,3 +1,5 @@
-# Strapi with page builder
+# Strapi with Page Builder
 
-參考 https://pagebuilder.wc8.io/docs 建置
+Built with reference to https://pagebuilder.wc8.io/docs
+
+Visit http://localhost:1337/admin to view the final results
