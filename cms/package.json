@@ -1,0 +1,52 @@
+{
+  "name": "cms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "configure:security": "cp ./demo/config/middlewares.ts ./config/middlewares.ts",
+    "demo:prepare": "npm run load:demodata && npm run configure:security",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "load:demodata": "strapi import -f ./demo/data/demodata.tar.gz",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.14.0",
+    "@strapi/plugin-users-permissions": "5.14.0",
+    "@strapi/strapi": "5.14.0",
+    "@wecre8websites/strapi-page-builder": "^1.0.8",
+    "better-sqlite3": "11.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "strapi-plugin-navigation": "^3.0.8",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "better-sqlite3",
+      "core-js-pure",
+      "esbuild",
+      "sharp"
+    ]
+  },
+  "strapi": {
+    "uuid": "1cbc44b4-2c3e-4177-b1ef-95e51496bdba",
+    "template": "https://github.com/wecre8websites/strapi-page-builder-cms",
+    "installId": "841777e9b6039166e36ceaa6b62f819bf50836fc640cb505fc64e36d98575678"
+  }
+}

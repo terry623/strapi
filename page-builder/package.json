@@ -1,0 +1,40 @@
+{
+  "name": "strapi-page-builder-demo",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@formatjs/intl-localematcher": "^0.6.0",
+    "@strapi/blocks-react-renderer": "^1.0.2",
+    "@wecre8websites/strapi-page-builder-react": "^1.0.7",
+    "animate.css": "^4.1.1",
+    "handlebars": "^4.7.8",
+    "negotiator": "^1.0.0",
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-intersection-observer": "^9.15.1"
+  },
+  "devDependencies": {
+    "@types/negotiator": "^0.6.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "sharp"
+    ],
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
+  }
+}
