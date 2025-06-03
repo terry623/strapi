@@ -17,31 +17,31 @@
   },
   "attributes": {
     "slug": {
+      "type": "uid",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "uid",
       "targetField": "title",
       "required": true
     },
     "title": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string",
       "required": true
     },
     "description": {
+      "type": "blocks",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "blocks"
+      }
     },
     "products": {
       "type": "relation",
@@ -51,6 +51,11 @@
     },
     "image": {
       "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "multiple": false,
       "required": false,
       "allowedTypes": [
@@ -58,20 +63,30 @@
         "files",
         "videos",
         "audios"
-      ],
+      ]
+    },
+    "shortDescription": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "shortDescription": {
+    "Banner": {
+      "type": "media",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "text"
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
